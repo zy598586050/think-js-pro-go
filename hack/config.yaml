@@ -1,0 +1,10 @@
+# CLI.
+gfcli:
+  gen:
+    dao:
+      - link:            "mysql:ThinkJsAdmin:ThinkJsAdmin6895@tcp(39.106.88.8:3306)/ThinkJsAdmin"
+        tables:          "sys_role_dept"
+        removePrefix:    "gf_"
+        descriptionTag:  true
+        noModelComment:  true
+        path: "./internal/app/system"
