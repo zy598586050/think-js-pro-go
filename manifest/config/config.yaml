@@ -81,7 +81,7 @@ casbin:
 gfcli:
   gen:
     dao:
-      - link:            "mysql:gfast3:gfast333@tcp(192.168.0.212:3306)/gfast-v32"
+      - link:            "mysql:ThinkJsAdmin:ThinkJsAdmin6895@tcp(39.106.88.8:3306)/ThinkJsAdmin"
         tables:          "tools_gen_table,tools_gen_table_column"
         removePrefix:    "gf_"
         descriptionTag:  true

@@ -1,10 +1,9 @@
 package main
 
 import (
-	_ "tv3a/internal/app/boot"
-
 	_ "github.com/gogf/gf/contrib/drivers/mysql/v2"
 	_ "github.com/gogf/gf/contrib/nosql/redis/v2"
+	_ "tv3a/internal/app/boot"
 
 	_ "tv3a/internal/app/system/packed"
 	"tv3a/internal/cmd"

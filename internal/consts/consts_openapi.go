@@ -1,8 +1,8 @@
 package consts
 
 const (
-	OpenAPITitle       = `GFast-v3`
+	OpenAPITitle       = `tv3a`
 	OpenAPIDescription = `基于 GoFrame2.0的后台管理系统。 Enjoy 💖 `
-	OpenAPIContactName = "GFast"
-	OpenAPIContactUrl  = "http://www.g-fast.cn"
+	OpenAPIContactName = "tv3a"
+	OpenAPIContactUrl  = "https://tv3a.think-js.cn"
 )
