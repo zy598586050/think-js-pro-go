@@ -7,10 +7,10 @@ RUN mkdir -p think-js-pro-go
 
 WORKDIR /think-js-pro-go
 
-COPY ./../../main .
+COPY main .
 
-COPY ./../../manifest .
+COPY manifest .
 
-COPY ./../../resource .
+COPY resource .
 
 ENTRYPOINT ["./main"]
