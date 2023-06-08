@@ -18,10 +18,10 @@ RUN mkdir -p think-js-pro-go
 
 WORKDIR /think-js-pro-go
 
-COPY --from=builder main .
+COPY --from=builder ./think-js-pro-go/main .
 
-COPY --from=builder manifest .
+COPY --from=builder ./think-js-pro-go/manifest .
 
-COPY --from=builder resource .
+COPY --from=builder ./think-js-pro-go/resource .
 
 ENTRYPOINT ["./main"]
