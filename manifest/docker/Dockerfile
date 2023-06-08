@@ -1,19 +1,14 @@
-FROM loads/alpine:3.8
+FROM golang:latest
 
-###############################################################################
-#                                INSTALLATION
-###############################################################################
+ENV GO111MODULE=on
+ENV GOPROXY=https://goproxy.cn,direct
 
-ENV WORKDIR  /app
+RUN mkdir -p think-js-pro-go
 
-ADD resource $WORKDIR/
+WORKDIR /think-js-pro-go
 
-ADD ./bin/linux_amd64/main $WORKDIR/main
+COPY . .
 
-RUN chmod +x $WORKDIR/main
+RUN go build main.go
 
-###############################################################################
-#                                   START
-###############################################################################
-WORKDIR $WORKDIR
-CMD ./main
+ENTRYPOINT ["/app/main"]

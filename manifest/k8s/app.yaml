@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    run: think-js-pro-go-sample
+  name: think-js-pro-go-sample
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      run: think-js-pro-go-sample
+  template:
+    metadata:
+      labels:
+        run: think-js-pro-go-sample
+    spec:
+      containers:
+      - image: ${IMAGE}
+        name: app
