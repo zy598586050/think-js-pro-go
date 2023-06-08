@@ -13,4 +13,4 @@ COPY ../../manifest .
 
 COPY ../../resource .
 
-ENTRYPOINT ["/app/main"]
+ENTRYPOINT ["./main"]
