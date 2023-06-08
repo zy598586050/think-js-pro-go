@@ -1,7 +1,4 @@
-FROM golang:latest
-
-ENV GO111MODULE=on
-ENV GOPROXY=https://goproxy.cn,direct
+FROM alpine:latest
 
 RUN mkdir -p think-js-pro-go
 
