@@ -7,10 +7,6 @@ RUN mkdir -p think-js-pro-go
 
 WORKDIR /think-js-pro-go
 
-#COPY ../../ .
-
-RUN ls
-
-RUN go build main.go
+COPY ../../ .
 
 ENTRYPOINT ["/app/main"]
