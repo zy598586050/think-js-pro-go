@@ -7,7 +7,7 @@ RUN mkdir -p think-js-pro-go
 
 WORKDIR /think-js-pro-go
 
-COPY . .
+COPY ../../ .
 
 RUN go build main.go
 
