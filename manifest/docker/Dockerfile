@@ -14,16 +14,16 @@ COPY . .
 RUN go build main.go
 
 # 第二步
-FROM alpine:latest
+FROM scratch
 
 RUN mkdir -p think-js-pro-go
 
 WORKDIR /think-js-pro-go
 
-COPY --from=builder ./app-go/main .
+COPY --from=builder /app-go/main main
 
-COPY --from=builder ./app-go/manifest .
+COPY --from=builder /app-go/manifest manifest
 
-COPY --from=builder ./app-go/resource .
+COPY --from=builder /app-go/resource resource
 
 ENTRYPOINT ["./main"]
