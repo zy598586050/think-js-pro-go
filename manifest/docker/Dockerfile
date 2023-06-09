@@ -20,13 +20,13 @@ RUN mkdir -p think-js-pro-go
 
 WORKDIR /think-js-pro-go
 
-RUN mkdir -p main
+#RUN mkdir -p main
 COPY --from=builder app-go/main main
 
-RUN mkdir -p manifest
+#RUN mkdir -p manifest
 COPY --from=builder app-go/manifest manifest
 
-RUN mkdir -p resource
+#RUN mkdir -p resource
 COPY --from=builder app-go/resource resource
 
 #ENTRYPOINT ["./main"]
