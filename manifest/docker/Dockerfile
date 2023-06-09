@@ -14,7 +14,7 @@ COPY . .
 RUN go build main.go
 
 # 第二步
-FROM scratch:latest
+FROM scratch
 
 RUN mkdir -p think-js-pro-go
 
