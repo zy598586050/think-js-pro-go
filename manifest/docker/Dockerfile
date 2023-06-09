@@ -26,4 +26,4 @@ COPY --from=builder app-go/manifest .
 
 COPY --from=builder app-go/resource .
 
-ENTRYPOINT ["./main"]
+#ENTRYPOINT ["./main"]
