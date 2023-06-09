@@ -14,7 +14,7 @@ COPY . .
 RUN go build main.go
 
 # 第二步
-FROM scratch
+FROM alpine:latest
 
 RUN mkdir -p think-js-pro-go
 
