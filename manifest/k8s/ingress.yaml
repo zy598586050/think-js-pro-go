@@ -1,13 +1,13 @@
-apiVersion: networking.k8s.io/v1
+apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-  name: think-js-pro-go-route
+  name: go-route
 spec:
   rules:
     - host: www.c3340ad5c4bda474e863f94e4629d72f7.cn-zhangjiakou.alicontainer.com
       http:
         paths:
           - backend:
-              serviceName: think-js-pro-go-service
+              serviceName: go-service
               servicePort: 8080
             path: /
