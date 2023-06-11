@@ -4,7 +4,7 @@ metadata:
   name: think-js-pro-go-route
 spec:
   rules:
-    - host: www.c5a194a8ee10044eba673c20eb3367692.cn-beijing.alicontainer.com
+    - host: www.c3340ad5c4bda474e863f94e4629d72f7.cn-zhangjiakou.alicontainer.com
       http:
         paths:
           - backend:
