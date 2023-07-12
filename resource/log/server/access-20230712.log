@@ -1,0 +1,3 @@
+2023-07-12 20:37:22.243 {4053ca27051f71175e3d2c466b41af62} 404 "POST http 127.0.0.1:8808 /api/v1/pv HTTP/1.1" 0.000, 127.0.0.1, "", "PostmanRuntime/7.31.3"
+2023-07-12 20:37:39.938 {5007c145091f71175f3d2c4632f633ca} 200 "POST http 127.0.0.1:8808 /api/v1/system/pv HTTP/1.1" 0.010, 127.0.0.1, "", "PostmanRuntime/7.31.3"
+2023-07-12 20:38:15.787 {78c1e09a111f7117603d2c462ab0453a} 200 "POST http 127.0.0.1:8808 /api/v1/system/pv?url=http://www.baidu.com&event=click&ip=127.0.0.1 HTTP/1.1" 0.074, 127.0.0.1, "", "PostmanRuntime/7.31.3"

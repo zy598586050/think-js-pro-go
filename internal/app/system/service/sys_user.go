@@ -44,6 +44,7 @@ type (
 		ChangeUserStatus(ctx context.Context, req *system.UserStatusReq) (err error)
 		Delete(ctx context.Context, ids []int) (err error)
 		GetUsers(ctx context.Context, ids []int) (users []*model.SysUserSimpleRes, err error)
+		Pv(ctx context.Context, req *system.PvReq) (user *system.PvRes, err error)
 	}
 )
 

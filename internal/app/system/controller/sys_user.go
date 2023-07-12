@@ -100,3 +100,9 @@ func (c *userController) GetUsers(ctx context.Context, req *system.UserGetByIdsR
 	res.List, err = service.SysUser().GetUsers(ctx, req.Ids)
 	return
 }
+
+func (c *userController) Pv(ctx context.Context, req *system.PvReq) (res *system.PvRes, err error) {
+	res = new(system.PvRes)
+	_, err = service.SysUser().Pv(ctx, req)
+	return
+}

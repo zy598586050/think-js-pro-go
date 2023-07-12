@@ -1,0 +1,2 @@
+2023-07-12 20:38:15.762 [DEBU] {78c1e09a111f7117603d2c462ab0453a} [ 47 ms] [default] [ThinkJsAdmin] [rows:6  ] SHOW FULL COLUMNS FROM `pv`
+2023-07-12 20:38:15.785 [DEBU] {78c1e09a111f7117603d2c462ab0453a} [ 21 ms] [default] [ThinkJsAdmin] [rows:1  ] INSERT INTO `pv`(`created_at`,`updated_at`,`event`,`ip`,`url`) VALUES('2023-07-12 20:38:15','2023-07-12 20:38:15','click','127.0.0.1','http://www.baidu.com') 

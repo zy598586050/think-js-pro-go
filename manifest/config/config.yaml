@@ -48,6 +48,7 @@ gfToken:
   cacheModel: "redis"
   excludePaths:
     - "/api/v1/system/login"
+    - "/api/v1/system/pv"
 
 
 # Redis 配置示例
