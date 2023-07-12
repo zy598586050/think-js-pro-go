@@ -632,7 +632,7 @@ func (s *sSysUser) Pv(ctx context.Context, req *system.PvReq) (user *system.PvRe
 		_, err = dao.Pv.Ctx(ctx).Insert(do.Pv{
 			Url:   req.Url,
 			Event: req.Event,
-			Ip:    req.Ip,
+			Ip:    "",
 		})
 	})
 	return

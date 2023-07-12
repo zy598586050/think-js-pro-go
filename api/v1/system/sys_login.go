@@ -41,7 +41,6 @@ type PvReq struct {
 	g.Meta `path:"/pv" tags:"上报" method:"post" summary:"数据上报"`
 	Url    string `p:"url" v:"required"`
 	Event  string `p:"event" v:"required"`
-	Ip     string `p:"ip" v:"required"`
 }
 
 type PvRes struct {
