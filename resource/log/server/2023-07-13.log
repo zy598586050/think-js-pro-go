@@ -1,0 +1,9 @@
+2023-07-13 10:33:02.311 [INFO] pid[1948]: http server started listening on [:8808]
+2023-07-13 10:33:02.311 [INFO] swagger ui is serving at address: http://127.0.0.1:8808/swagger/
+2023-07-13 10:33:02.312 [INFO] openapi specification is serving at address: http://127.0.0.1:8808/api.json
+2023-07-13 10:34:13.724 [INFO] pid[25960]: http server started listening on [:8808]
+2023-07-13 10:34:13.724 [INFO] swagger ui is serving at address: http://127.0.0.1:8808/swagger/
+2023-07-13 10:34:13.725 [INFO] openapi specification is serving at address: http://127.0.0.1:8808/api.json
+2023-07-13 10:43:15.846 [INFO] pid[13452]: http server started listening on [:8808]
+2023-07-13 10:43:15.847 [INFO] swagger ui is serving at address: http://127.0.0.1:8808/swagger/
+2023-07-13 10:43:15.847 [INFO] openapi specification is serving at address: http://127.0.0.1:8808/api.json

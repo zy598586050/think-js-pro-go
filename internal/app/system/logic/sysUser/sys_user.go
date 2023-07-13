@@ -628,12 +628,23 @@ func (s *sSysUser) GetUsers(ctx context.Context, ids []int) (users []*model.SysU
 }
 
 func (s *sSysUser) Pv(ctx context.Context, req *system.PvReq) (user *system.PvRes, err error) {
+	var count int
 	err = g.Try(ctx, func(ctx context.Context) {
-		_, err = dao.Pv.Ctx(ctx).Insert(do.Pv{
-			Url:   req.Url,
-			Event: req.Event,
-			Ip:    "",
-		})
+		count, err = dao.Pv.Ctx(ctx).Where(dao.Pv.Columns().Url, req.Url).Where(dao.Pv.Columns().Event, req.Event).Count()
+		if err != nil {
+			return
+		}
+		if count > 0 {
+			dao.Pv.Ctx(ctx).Where(dao.Pv.Columns().Url, req.Url).Where(dao.Pv.Columns().Event, req.Event).Increment("count", 1)
+		} else {
+			dao.Pv.Ctx(ctx).Insert(do.Pv{
+				Url:       req.Url,
+				Event:     req.Event,
+				Ip:        g.RequestFromCtx(ctx).GetClientIp(),
+				UtmSource: req.UtmSource,
+				UtmId:     req.UtmId,
+			})
+		}
 	})
 	return
 }

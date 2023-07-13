@@ -15,7 +15,10 @@ type Pv struct {
 	Id        interface{} //
 	Url       interface{} //
 	Event     interface{} //
+	UtmSource interface{} //
+	UtmId     interface{} //
 	Ip        interface{} //
+	Count     interface{} //
 	CreatedAt *gtime.Time //
 	UpdatedAt *gtime.Time //
 }

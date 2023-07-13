@@ -13,7 +13,10 @@ type Pv struct {
 	Id        int         `json:"id"        description:""`
 	Url       string      `json:"url"       description:""`
 	Event     string      `json:"event"     description:""`
+	UtmSource string      `json:"utmSource" description:""`
+	UtmId     string      `json:"utmId"     description:""`
 	Ip        string      `json:"ip"        description:""`
+	Count     int         `json:"count"     description:""`
 	CreatedAt *gtime.Time `json:"createdAt" description:""`
 	UpdatedAt *gtime.Time `json:"updatedAt" description:""`
 }

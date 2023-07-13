@@ -38,9 +38,11 @@ type UserLoginOutRes struct {
 }
 
 type PvReq struct {
-	g.Meta `path:"/pv" tags:"上报" method:"post" summary:"数据上报"`
-	Url    string `p:"url" v:"required"`
-	Event  string `p:"event" v:"required"`
+	g.Meta    `path:"/pv" tags:"上报" method:"post" summary:"数据上报"`
+	Url       string `p:"url" v:"required"`
+	Event     string `p:"event" v:"required"`
+	UtmSource string `p:"utm_source"`
+	UtmId     string `p:"utm_id"`
 }
 
 type PvRes struct {

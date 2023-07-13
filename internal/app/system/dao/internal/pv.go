@@ -23,7 +23,10 @@ type PvColumns struct {
 	Id        string //
 	Url       string //
 	Event     string //
+	UtmSource string //
+	UtmId     string //
 	Ip        string //
+	Count     string //
 	CreatedAt string //
 	UpdatedAt string //
 }
@@ -33,7 +36,10 @@ var pvColumns = PvColumns{
 	Id:        "id",
 	Url:       "url",
 	Event:     "event",
+	UtmSource: "utm_source",
+	UtmId:     "utm_id",
 	Ip:        "ip",
+	Count:     "count",
 	CreatedAt: "created_at",
 	UpdatedAt: "updated_at",
 }
